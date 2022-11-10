@@ -1,0 +1,62 @@
+<Html>
+<head> 
+<title>
+Registration Page
+</title>
+  <style >
+    label{ font-size: 20;}
+    </style>
+</head>
+<body bgcolor="lightgrey" align="center">
+<br>
+<br>
+<form action="partials/db_Billing_add.php" method="post">
+<h1>Billing Details</h1>
+  <hr>
+  <br>
+  <br>
+  <br>
+<label> Bill No. : </label>   
+<input type="number" name="bill_no" size="15"/> <br> <br> 
+<label> Date :  </label>       
+<input type="date" name="date1" size="15"/> <br> <br> 
+<label> Customer Name : </label>       
+<input type="text" name="C_name"/> <br> <br>
+<label> Contact No.:  </label>   
+<input type="text" name="country_code"  value="+91" size="2"/>   
+<input type="text" name="phone" size="10"/> <br> <br>  
+<label> Products count :  </label>   
+<input type="number" name="p_count" size="15"/> <br> <br>
+<label></label>  
+<select name="p_name">
+    <option value="Endrine">Endrine</option>
+  <option value="bhc">bhc</option>
+  <option value="ddt">ddt</option>
+  <option value="baygon">baygon</option>
+</select>
+<br>
+<br>
+<label> Quantity </label>   
+<input type="number" name="quantity1" size="15"/> <br> <br>
+<label> Total Price </label>   
+<input type="number" name="Prices" size="15"/> <br> <br>
+
+<label>Payment : </label> 
+
+<select name="method">
+    <option value="Online">Online</option>
+  <option value="Offline">Offline</option>
+  <option value="Unpaid">Unpaid</option>
+</select>
+  
+<br><br><br>
+
+<tr>
+  <td colspan="2" align="center" ><input type="Submit" name="save" value="Submit" ></td>
+  </tr>
+
+  <br>  
+  </form>  
+</body>  
+</html>  
+
